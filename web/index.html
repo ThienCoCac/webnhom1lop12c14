@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trường THPT Bến Cát</title>
+  <meta name="description" content="Cổng thông tin điện tử Trường THPT Bến Cát — Đạo đức, tri thức, kỹ năng. Địa chỉ NB2A, khu phố 2, phường Bến Cát, TP. Hồ Chí Minh.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#noi-dung">Đi tới nội dung</a>
+  <div class="topline"></div>
+  <header class="site-header">
+    <div class="container brand-bar">
+      <a class="brand" href="#trang-chu">
+        <img class="seal" src="images/logo.png" alt="Logo Trường THPT Bến Cát" width="72" height="72">
+        <span class="brand-text">
+          <span class="brand-kicker">Cổng thông tin điện tử</span>
+          <span class="brand-name">Trường THPT Bến Cát</span>
+          <span class="brand-slogan">Đạo đức, tri thức, kỹ năng</span>
+        </span>
+      </a>
+      <div class="brand-side">
+        <p class="today" id="today"></p>
+        <form class="search" id="searchForm" role="search">
+          <label class="sr-only" for="q">Tìm kiếm</label>
+          <input id="q" type="search" name="q" placeholder="Tìm tin, văn bản..." autocomplete="off">
+          <button type="submit">Tìm</button>
+        </form>
+        <p class="hotline">Hotline <a href="tel:02743564830">0274.3564.830</a></p>
+      </div>
+    </div>
+    <div class="menu-wrap">
+      <div class="mobile-bar">
+        <a class="mobile-brand" href="#trang-chu">THPT Bến Cát</a>
+        <button class="hamburger" type="button" aria-expanded="false" aria-controls="mainNav">
+          <span class="hamburger-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+          Menu
+        </button>
+      </div>
+      <nav id="mainNav" class="main-nav" aria-label="Danh mục chính">
+        <ul class="nav-row nav-row-1">
+          <li class="nav-item nav-home"><a href="#trang-chu">Trang chủ</a></li>
+          <li class="nav-item has-sub">
+            <a href="#cong-khai" aria-haspopup="true" aria-expanded="false">Công khai <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.2L6 6.2 11 1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#dau-gia">Đấu giá</a></li>
+              <li><a href="#cong-khai-khac">Công khai khác</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#kgvh-hcm">KGVH HCM</a></li>
+          <li class="nav-item has-sub">
+            <a href="#cchc" aria-haspopup="true" aria-expanded="false">Cải cách hành chính <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.2L6 6.2 11 1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#bieu-mau">Biểu mẫu - Thủ tục hành chính</a></li>
+              <li><a href="#vb-cchc">Văn bản cải cách hành chính</a></li>
+              <li><a href="#chuyen-truong">Chuyển trường</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#tin-tuc">Tin tức</a></li>
+          <li class="nav-item has-sub">
+            <a href="#van-ban" aria-haspopup="true" aria-expanded="false">Văn bản <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.2L6 6.2 11 1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#vb-truong">Văn bản trường</a></li>
+              <li><a href="#vb-cap-tren">Văn bản cấp trên</a></li>
+              <li><a href="#lich-cong-tac">Lịch công tác</a></li>
+              <li><a href="#ba-cong-khai">Ba công khai</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub">
+            <a href="#thong-bao" aria-haspopup="true" aria-expanded="false">Thông báo <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.2L6 6.2 11 1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#tb-thi">Thông báo - Danh sách - Lịch thi</a></li>
+              <li><a href="#tkb">Thời khóa biểu</a></li>
+              <li><a href="#thi-hsg">Thi HSG/KHKT/Olympic/Sao Khuê/LTV</a></li>
+              <li><a href="#chinh-phuc">Chinh phục kỳ thi TN THPT</a></li>
+              <li><a href="#phong-trao">Phong trào Đoàn/Thư viện</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub drop-end">
+            <a href="#kiem-tra" aria-haspopup="true" aria-expanded="false">Kiểm tra - Đánh giá <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.2L6 6.2 11 1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#kt-cuoi-ky">Kiểm tra cuối kỳ</a></li>
+              <li><a href="#tuyen-sinh-10">Tuyển sinh 10</a></li>
+              <li><a href="#tot-nghiep">Tốt nghiệp THPT</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub drop-end">
+            <a href="#noi-bo" aria-haspopup="true" aria-expanded="false">Nội bộ <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.2L6 6.2 11 1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#vb-noi-bo">Văn bản nội bộ</a></li>
+              <li><a href="#phan-mem">Phần mềm</a></li>
+              <li><a href="#ho-so">Hồ sơ viên chức</a></li>
+              <li><a href="#hinh-anh">Hình ảnh/Video</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-sub drop-end">
+            <a href="#gioi-thieu" aria-haspopup="true" aria-expanded="false">Giới thiệu <svg class="caret" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.2L6 6.2 11 1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+            <ul class="dropdown">
+              <li><a href="#tong-quan">Tổng quan</a></li>
+              <li><a href="#chi-bo">Chi ủy Chi bộ</a></li>
+              <li><a href="#bgh">Ban giám hiệu</a></li>
+              <li><a href="#to-cm">Tổ chuyên môn</a></li>
+              <li><a href="#cong-doan">Công đoàn</a></li>
+              <li><a href="#doan">Đoàn thanh niên</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav-row nav-row-2">
+          <li class="nav-item"><a href="#hoc-thi">Học - Thi trực tuyến</a></li>
+          <li class="nav-item"><a href="#thu-vien">Thư viện</a></li>
+          <li class="nav-item"><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="searchPop" class="search-pop" hidden></div>
+
+  <main id="noi-dung">
+    <div id="view-home">
+      <section class="hero" aria-roledescription="băng hình">
+        <div class="container hero-grid">
+          <div class="hero-frame">
+            <img class="slide is-active" src="images/campus.jpg" width="1792" height="1008" alt="Tập thể cán bộ giáo viên Trường THPT Bến Cát tại Lễ khai giảng" data-kicker="Từ tháng 9 năm 1963" data-lead="Ngôi trường công lập tại phường Bến Cát, nơi hơn 1.500 học sinh học tập, rèn luyện mỗi ngày.">
+            <img class="slide" src="images/khai-giang-4-hero.jpg" width="1792" height="1008" alt="Thầy cô cán bộ giáo viên nhà trường" data-kicker="Đội ngũ tâm huyết" data-lead="Thầy cô giáo luôn tận tụy, đồng hành cùng học sinh trên con đường tri thức và rèn luyện nhân cách.">
+            <img class="slide" src="images/khai-giang-2-hero.jpg" width="1792" height="1008" alt="Quý cô giáo rạng rỡ chào đón năm học mới" data-kicker="Đạo đức - Tri thức - Kỹ năng" data-lead="Phong trào thi đua dạy tốt, học tốt sôi nổi ngay từ những ngày đầu năm học.">
+            <img class="slide" src="images/classroom.jpg" width="1792" height="1008" alt="Phòng học của nhà trường" data-kicker="40+ lớp học" data-lead="Mỗi tiết học là một bước vững trên nền nếp: đạo đức, tri thức và kỹ năng song hành.">
+            <img class="slide" src="images/yard.jpg" width="1792" height="1008" alt="Sân vận động của nhà trường" data-kicker="Chuẩn quốc gia từ 2013" data-lead="Sân bãi, thư viện và các tổ chuyên môn cùng nuôi thói quen tự học, tự rèn.">
+            <button class="slide-btn prev" type="button" aria-label="Ảnh trước">‹</button>
+            <button class="slide-btn next" type="button" aria-label="Ảnh sau">›</button>
+            <div class="dots" role="tablist" aria-label="Chọn ảnh">
+              <button class="dot is-active" type="button" aria-label="Ảnh 1"></button>
+              <button class="dot" type="button" aria-label="Ảnh 2"></button>
+              <button class="dot" type="button" aria-label="Ảnh 3"></button>
+              <button class="dot" type="button" aria-label="Ảnh 4"></button>
+              <button class="dot" type="button" aria-label="Ảnh 5"></button>
+            </div>
+          </div>
+          <div class="hero-copy">
+            <p class="eyebrow" id="heroKicker">Từ tháng 9 năm 1963</p>
+            <h1>Trường THPT Bến Cát</h1>
+            <p class="slogan">Đạo đức, tri thức, kỹ năng</p>
+            <p class="hero-lead" id="heroLead">Ngôi trường công lập tại phường Bến Cát, nơi hơn 1.500 học sinh học tập, rèn luyện mỗi ngày.</p>
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#tin-tuc">Tin tức nhà trường</a>
+              <a class="btn btn-line" href="#tuyen-sinh-10">Tuyển sinh 10</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick" aria-label="Lối tắt">
+        <div class="container quick-grid">
+          <a href="#tb-thi"><strong>Lịch thi</strong><span>Thông báo, danh sách, lịch</span></a>
+          <a href="#tkb"><strong>Thời khóa biểu</strong><span>Tuần hiện hành</span></a>
+          <a href="#van-ban"><strong>Văn bản</strong><span>Trường và cấp trên</span></a>
+          <a href="#hoc-thi"><strong>Học - Thi trực tuyến</strong><span>Đề cương, ôn tập</span></a>
+        </div>
+      </section>
+
+      <section class="band" id="ve-nha-truong">
+        <div class="container about-grid">
+          <figure class="about-photo">
+            <img src="images/campus-old.jpg" width="1792" height="1008" alt="Khuôn viên Trường THPT Bến Cát">
+          </figure>
+          <div>
+            <p class="section-kicker">Giới thiệu</p>
+            <h2>Hơn sáu mươi năm dựng nền nếp học</h2>
+            <p>Trường THPT Bến Cát được thành lập tháng 9 năm 1963. Từ ngôi trường bán công những ngày đầu, nhà trường đã trở thành cơ sở giáo dục công lập bậc trung học phổ thông của phường Bến Cát, TP. Hồ Chí Minh.</p>
+            <p>Năm 2007, trường vinh dự được tặng thưởng Huân chương Lao động hạng Ba. Năm 2013, trường đạt chuẩn Quốc gia. Hiện nay nhà trường có hơn 40 lớp với trên 1.500 học sinh.</p>
+            <ul class="milestones">
+              <li><b>9/1963</b><span>Thành lập trường</span></li>
+              <li><b>2007</b><span>Huân chương Lao động hạng Ba</span></li>
+              <li><b>2013</b><span>Đạt chuẩn Quốc gia</span></li>
+              <li><b>40+ lớp</b><span>Hơn 1.500 học sinh</span></li>
+            </ul>
+            <p><a class="text-link" href="#tong-quan">Xem tổng quan nhà trường</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band-plain" id="tin-moi">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Tin tức</p>
+              <h2>Hoạt động nhà trường</h2>
+            </div>
+            <a class="text-link" href="#tin-tuc">Tất cả tin</a>
+          </div>
+          <div class="news-grid">
+            <a class="feature" href="#tin-phu-huynh">
+              <img src="images/classroom.jpg" width="1792" height="1008" alt="">
+              <div>
+                <time datetime="2026-10-15">15/10/2026</time>
+                <h3>Họp phụ huynh giữa học kỳ I năm học 2026–2027</h3>
+                <p>Nhà trường mời phụ huynh dự họp theo từng khối, nghe báo cáo học tập, nền nếp và kế hoạch kiểm tra giữa kỳ.</p>
+              </div>
+            </a>
+            <ul class="news-side">
+              <li><a href="#tin-giua-ky"><time datetime="2026-10-10">10/10/2026</time><span>Kế hoạch kiểm tra giữa học kỳ I</span></a></li>
+              <li><a href="#tin-khai-giang"><time datetime="2026-09-05">05/09/2026</time><span>Lễ khai giảng năm học 2026–2027</span></a></li>
+              <li><a href="#tin-hoi-khoe"><time datetime="2026-09-28">28/09/2026</time><span>Hội khỏe Phù Đổng cấp trường</span></a></li>
+              <li><a href="#tin-thu-vien"><time datetime="2026-09-20">20/09/2026</time><span>Tuần lễ đọc sách tại thư viện</span></a></li>
+              <li><a href="#tin-dau-khoa"><time datetime="2026-08-25">25/08/2026</time><span>Sinh hoạt chính trị đầu năm học</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="khoanh-khac-truong">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Hình ảnh hoạt động</p>
+              <h2>Khoảnh khắc Lễ khai giảng năm học 2026–2027</h2>
+            </div>
+            <a class="text-link" href="#hinh-anh">Xem tất cả ảnh</a>
+          </div>
+          <div class="gallery">
+            <figure class="gallery-wide">
+              <img src="images/khai-giang-tap-the.jpg" alt="Tập thể Hội đồng sư phạm Trường THPT Bến Cát tại Lễ khai giảng 2026–2027">
+              <figcaption>Tập thể Hội đồng sư phạm Trường THPT Bến Cát tại Lễ khai giảng năm học 2026–2027</figcaption>
+            </figure>
+            <figure>
+              <img src="images/khai-giang-1.jpg" alt="Thầy cô tổ chuyên môn tại Lễ khai giảng">
+              <figcaption>Thầy cô tổ chuyên môn chụp ảnh lưu niệm</figcaption>
+            </figure>
+            <figure>
+              <img src="images/khai-giang-2.jpg" alt="Quý cô giáo trong tà áo dài truyền thống ngày khai trường">
+              <figcaption>Quý cô giáo rạng rỡ chào đón năm học mới</figcaption>
+            </figure>
+            <figure>
+              <img src="images/khai-giang-3.jpg" alt="Thầy cô các tổ bộ môn nhà trường">
+              <figcaption>Tập thể thầy cô giáo viên bộ môn</figcaption>
+            </figure>
+            <figure>
+              <img src="images/khai-giang-4.jpg" alt="Cán bộ giáo viên Trường THPT Bến Cát">
+              <figcaption>Đội ngũ cán bộ, giáo viên hân hoan bước vào năm học mới</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="lien-he">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Liên hệ</p>
+              <h2>Văn phòng nhà trường</h2>
+            </div>
+          </div>
+          <div class="contact-grid">
+            <address class="card">
+              <h3>Địa chỉ</h3>
+              <p>NB2A — Khu phố 2 — Phường Bến Cát — TP. Hồ Chí Minh</p>
+              <h3>Điện thoại</h3>
+              <p><a href="tel:02743564830">0274.3564.830</a></p>
+              <h3>Thư điện tử</h3>
+              <p><a href="mailto:thpt-bencat@sgdbinhduong.edu.vn">thpt-bencat@sgdbinhduong.edu.vn</a></p>
+              <h3>Giờ tiếp dân</h3>
+              <p>Thứ Hai đến thứ Sáu<br>Sáng 7:00–11:30 · Chiều 13:00–17:00</p>
+            </address>
+            <form class="card form" id="contactForm">
+              <h3>Gửi lời nhắn</h3>
+              <p class="form-hint">Biểu mẫu mở thư trên máy của bạn, gửi thẳng tới hộp thư nhà trường.</p>
+              <label>Họ và tên<input name="ten" required autocomplete="name"></label>
+              <label>Số điện thoại<input name="sdt" required autocomplete="tel" inputmode="tel"></label>
+              <label>Email<input name="email" type="email" required autocomplete="email"></label>
+              <label>Nội dung<textarea name="nd" rows="4" required></textarea></label>
+              <button class="btn btn-gold" type="submit">Soạn email</button>
+              <p class="form-status" id="formStatus" role="status" hidden></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <article id="view-page" class="page-view" hidden>
+      <div class="container">
+        <nav class="crumb" aria-label="Đường dẫn">
+          <a href="#trang-chu">Trang chủ</a>
+          <span aria-hidden="true">/</span>
+          <span id="crumb-current"></span>
+        </nav>
+        <header class="page-head">
+          <p class="section-kicker" id="page-kicker"></p>
+          <h1 id="page-title"></h1>
+        </header>
+        <div id="page-body" class="prose"></div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-name">Trường THPT Bến Cát</p>
+        <p>Đạo đức, tri thức, kỹ năng</p>
+        <p>NB2A — Khu phố 2 — Phường Bến Cát — TP. Hồ Chí Minh</p>
+        <p>Điện thoại: <a href="tel:02743564830">0274.3564.830</a><br>
+        Email: <a href="mailto:thpt-bencat@sgdbinhduong.edu.vn">thpt-bencat@sgdbinhduong.edu.vn</a></p>
+      </div>
+      <div>
+        <h2>Danh mục</h2>
+        <ul>
+          <li><a href="#cong-khai">Công khai</a></li>
+          <li><a href="#cchc">Cải cách hành chính</a></li>
+          <li><a href="#van-ban">Văn bản</a></li>
+          <li><a href="#thong-bao">Thông báo</a></li>
+          <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Học tập</h2>
+        <ul>
+          <li><a href="#hoc-thi">Học - Thi trực tuyến</a></li>
+          <li><a href="#thu-vien">Thư viện</a></li>
+          <li><a href="#tkb">Thời khóa biểu</a></li>
+          <li><a href="#tuyen-sinh-10">Tuyển sinh 10</a></li>
+          <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Trường THPT Bến Cát. Nội dung phục vụ tra cứu công khai của nhà trường.</p>
+    </div>
+  </footer>
+  <button class="to-top" type="button" hidden aria-label="Lên đầu trang">↑</button>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
